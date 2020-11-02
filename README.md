@@ -5,4 +5,4 @@ import fetchHttpFile from "https://raw.githubusercontent.com/OverGlass/fetchHttp
 const Uint8ArryFile = await fetchHttpFile("http://localhost:8080/testFile.pdf")
 ```
 
-For more information consult fetchHttpFile.test.ts
+For more information consult [fetchHttpFile.test.ts](https://github.com/OverGlass/fetchHttpFile/blob/master/fetchHttpFile.test.ts)
