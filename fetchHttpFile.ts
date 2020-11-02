@@ -1,7 +1,9 @@
 import errorsMessages from "./errorsMessages.ts";
 import { pipe } from "https://deno.land/x/fae@v0.6.2/pipe.ts";
 
-export default async function fetchHttpFile(httpUrl: string) {
+export default async function fetchHttpFile(
+  httpUrl: string
+): Promise<Uint8Array> {
   if (!isHttpUrlValid(httpUrl)) throw new Error(errorsMessages.isHttpUrl);
 
   const res = await fetch(httpUrl);
